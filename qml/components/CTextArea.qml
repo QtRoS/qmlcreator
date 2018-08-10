@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cTextArea
@@ -24,7 +24,7 @@ Item {
     property alias text: textEdit.text
 
     function textStyle() {
-        return "<style>a:link { color: " + palette.link + "; text-decoration: none; }</style>"
+        return "<style>a:link { color: " + paletteItem.link + "; text-decoration: none; }</style>"
     }
 
     CFlickable {
@@ -36,7 +36,7 @@ Item {
             id: textEdit
             anchors.fill: parent
 
-            color: palette.label
+            color: paletteItem.label
             font.family: "Roboto"
             font.pixelSize: 6 * settings.pixelDensity
             textMargin: 3 * settings.pixelDensity

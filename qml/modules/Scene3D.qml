@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
+import QtQml 2.11
 import QtQuick.Scene3D 2.0
 
 QtObject {

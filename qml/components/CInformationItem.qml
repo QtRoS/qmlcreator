@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cInformationItem
@@ -54,7 +54,7 @@ Item {
             anchors.left: parent.left
             anchors.right: parent.right
             font.pixelSize: 5 * settings.pixelDensity
-            color: palette.description
+            color: paletteItem.description
         }
     }
 }

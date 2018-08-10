@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtQuick.Dialogs 1.2
+import QtQml 2.11
+import QtQuick.Dialogs 1.3
 
 QtObject {
-    property string version: "1.2"
+    property string version: "1.3"
 }

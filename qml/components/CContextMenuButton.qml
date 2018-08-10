@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cButton
@@ -27,14 +27,14 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: mouseArea.pressed ? palette.contextMenuButtonPressed : palette.contextMenuButton
+        color: mouseArea.pressed ? paletteItem.contextMenuButtonPressed : paletteItem.contextMenuButton
     }
 
     CLabel {
         id: buttonLabel
         anchors.fill: parent
         horizontalAlignment: Text.AlignHCenter
-        color: palette.contextMenuButtonText
+        color: paletteItem.contextMenuButtonText
     }
 
     MouseArea {

@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtQuick 2.5
+import QtQml 2.11
+import QtQuick 2.11
 
 QtObject {
-    property string version: "2.5"
+    property string version: "2.11"
 }

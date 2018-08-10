@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 import QtQuick.Layouts 1.2
 import ProjectManager 1.1
 import "../components"
@@ -81,7 +81,7 @@ BlankScreen {
                 width: messagesFlickable.width
                 height: messagesFlickable.height
                 visible: settings.debugging
-                color: palette.editorNormal
+                color: paletteItem.editorNormal
                 opacity: 0.3
                 font.pixelSize: 6 * settings.pixelDensity
                 wrapMode: TextEdit.Wrap

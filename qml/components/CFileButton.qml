@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 import QtQuick.Layouts 1.2
 
 Item {
@@ -48,7 +48,7 @@ Item {
 
             Rectangle {
                 anchors.fill: parent
-                color: palette.button
+                color: paletteItem.button
                 visible: buttonMouseArea.pressed
             }
 
@@ -73,7 +73,7 @@ Item {
 
             Rectangle {
                 anchors.fill: parent
-                color: palette.button
+                color: paletteItem.button
                 visible: removeButtonMouseArea.pressed
             }
 

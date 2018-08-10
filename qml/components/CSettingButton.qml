@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cSettingButton
@@ -38,7 +38,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: palette.button
+        color: paletteItem.button
         visible: mouseArea.pressed
     }
 
@@ -61,7 +61,7 @@ Item {
             anchors.left: parent.left
             anchors.right: parent.right
             font.pixelSize: 5 * settings.pixelDensity
-            color: palette.description
+            color: paletteItem.description
         }
     }
 

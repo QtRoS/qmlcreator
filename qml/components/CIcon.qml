@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Text {
     id: cIcon
@@ -24,5 +24,5 @@ Text {
     font.pixelSize: 10 * settings.pixelDensity
     verticalAlignment: Text.AlignVCenter
     elide: Text.ElideRight
-    color: palette.icon
+    color: paletteItem.icon
 }

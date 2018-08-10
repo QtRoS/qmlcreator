@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cCheckBox
@@ -38,7 +38,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: palette.button
+        color: paletteItem.button
         visible: mouseArea.pressed
     }
 

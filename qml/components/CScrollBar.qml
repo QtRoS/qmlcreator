@@ -16,8 +16,8 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
-import QtQml 2.2
+import QtQuick 2.10
+import QtQml 2.11
 
 Rectangle {
      id: cScrollBar
@@ -33,7 +33,7 @@ Rectangle {
      opacity: 0
 
      width: 3 * settings.pixelDensity
-     color: palette.scrollBar
+     color: paletteItem.scrollBar
 
      Behavior on opacity {
          NumberAnimation {

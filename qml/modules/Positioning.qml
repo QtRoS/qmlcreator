@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtPositioning 5.2
+import QtQml 2.11
+import QtPositioning 5.11
 
 QtObject {
-    property string version: "5.2"
+    property string version: "5.11"
 }

@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 import QtQuick.Layouts 1.2
 
 Item {
@@ -27,7 +27,7 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: palette.button
+        color: paletteItem.button
         visible: mouseArea.pressed
     }
 

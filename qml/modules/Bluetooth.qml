@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
+import QtQml 2.11
 import QtBluetooth 5.2
 
 QtObject {

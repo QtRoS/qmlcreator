@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtTest 1.1
+import QtQml 2.11
+import QtTest 1.11
 
 QtObject {
-    property string version: "1.1"
+    property string version: "1.11"
 }

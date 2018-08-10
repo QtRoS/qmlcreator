@@ -16,8 +16,8 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
-import QtQuick.Controls 1.4
+import QtQuick 2.10
+import QtQuick.Controls 2.4
 import "../components"
 
 BlankScreen {
@@ -91,11 +91,11 @@ BlankScreen {
                          else
                              qsTr("Undefined")
             descriptionColor: if (status === 1)
-                                  palette.description
+                                  paletteItem.description
                               else if (status === 2)
-                                  palette.warning
+                                  paletteItem.warning
                               else
-                                  palette.label
+                                  paletteItem.label
         }
     }
 

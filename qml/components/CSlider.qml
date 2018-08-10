@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cSlider
@@ -42,7 +42,7 @@ Item {
             anchors.right: handle.left
             anchors.top: parent.top
             anchors.bottom: parent.bottom
-            color: palette.sliderFilledStripe
+            color: paletteItem.sliderFilledStripe
         }
 
         Rectangle {
@@ -50,7 +50,7 @@ Item {
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.bottom: parent.bottom
-            color: palette.sliderEmptyStripe
+            color: paletteItem.sliderEmptyStripe
         }
 
         Rectangle {
@@ -60,9 +60,9 @@ Item {
             width: handleRadius * 2
             height: handleRadius * 2
             radius: handleRadius
-            color: palette.sliderHandle
+            color: paletteItem.sliderHandle
             border.width: 1 * settings.pixelDensity
-            border.color: palette.sliderHandleBorder
+            border.color: paletteItem.sliderHandleBorder
         }
     }
 

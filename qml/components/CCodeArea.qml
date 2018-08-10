@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 import ProjectManager 1.1
 import SyntaxHighlighter 1.1
 
@@ -65,7 +65,7 @@ Item {
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         width: column.width * 1.2
-        color: palette.lineNumbersBackground
+        color: paletteItem.lineNumbersBackground
 
         Column {
             id: column
@@ -76,7 +76,7 @@ Item {
                 model: textEdit.lineCount
                 delegate: Text {
                     anchors.right: column.right
-                    color: index + 1 === textEdit.currentLine ? palette.label : palette.lineNumber
+                    color: index + 1 === textEdit.currentLine ? paletteItem.label : paletteItem.lineNumber
                     font.family: settings.font
                     font.pixelSize: settings.fontSize
                     font.bold: index + 1 === textEdit.currentLine
@@ -115,9 +115,9 @@ Item {
             anchors.left: parent.left
             anchors.right: parent.right
 
-            color: palette.editorNormal
-            selectionColor: palette.editorSelection
-            selectedTextColor: palette.editorSelectedText
+            color: paletteItem.editorNormal
+            selectioncolor: paletteItem.editorSelection
+            selectedTextcolor: paletteItem.editorSelectedText
 
             font.family: settings.font
             font.pixelSize: settings.fontSize
@@ -232,16 +232,16 @@ Item {
             SyntaxHighlighter {
                 id: syntaxHighlighter
 
-                normalColor: palette.editorNormal
-                commentColor: palette.editorComment
-                numberColor: palette.editorNumber
-                stringColor: palette.editorString
-                operatorColor: palette.editorOperator
-                keywordColor: palette.editorKeyword
-                builtInColor: palette.editorBuiltIn
-                markerColor: palette.editorMarker
-                itemColor: palette.editorItem
-                propertyColor: palette.editorProperty
+                normalcolor: paletteItem.editorNormal
+                commentcolor: paletteItem.editorComment
+                numbercolor: paletteItem.editorNumber
+                stringcolor: paletteItem.editorString
+                operatorcolor: paletteItem.editorOperator
+                keywordcolor: paletteItem.editorKeyword
+                builtIncolor: paletteItem.editorBuiltIn
+                markercolor: paletteItem.editorMarker
+                itemcolor: paletteItem.editorItem
+                propertycolor: paletteItem.editorProperty
             }
 
             Component.onCompleted: {
@@ -366,7 +366,7 @@ Item {
                     width: parent.width
                     height: parent.height
                     radius: width / 2
-                    color: palette.editorSelectionHandle
+                    color: paletteItem.editorSelectionHandle
 
                     Rectangle {
                         width: Math.floor(parent.width / 2)
@@ -426,7 +426,7 @@ Item {
                     width: parent.width
                     height: parent.height
                     radius: width / 2
-                    color: palette.editorSelectionHandle
+                    color: paletteItem.editorSelectionHandle
 
                     Rectangle {
                         width: Math.floor(parent.width / 2)

@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cTextField
@@ -32,9 +32,9 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: palette.textFieldBackground
+        color: paletteItem.textFieldBackground
         border.width: Math.max(1, Math.round(0.3 * settings.pixelDensity))
-        border.color: palette.textFieldBorder
+        border.color: paletteItem.textFieldBorder
     }
 
     TextInput {
@@ -45,7 +45,7 @@ Item {
         font.family: "Roboto"
         font.pixelSize: 6 * settings.pixelDensity
         verticalAlignment: Text.AlignVCenter
-        color: palette.textFieldPlaceholder
+        color: paletteItem.textFieldPlaceholder
         readOnly: true
         visible: textInput.length === 0
     }
@@ -60,7 +60,7 @@ Item {
         font.family: "Roboto"
         font.pixelSize: 6 * settings.pixelDensity
         verticalAlignment: Text.AlignVCenter
-        color: palette.label
+        color: paletteItem.label
         clip: true
 
         MouseArea {

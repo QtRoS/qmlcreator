@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: baseDialog
@@ -34,6 +34,6 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: palette.dialogOverlay
+        color: paletteItem.dialogOverlay
     }
 }

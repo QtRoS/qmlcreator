@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cSwitcher
@@ -30,9 +30,9 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: palette.switcherBackground
+        color: paletteItem.switcherBackground
         border.width: Math.max(1, Math.round(0.3 * settings.pixelDensity))
-        border.color: palette.switcherBorder
+        border.color: paletteItem.switcherBorder
     }
 
     Item {
@@ -53,7 +53,7 @@ Item {
             anchors.bottom: parent.bottom
             width: parent.width * 0.44
 
-            color: palette.switcherHandle
+            color: paletteItem.switcherHandle
 
             Behavior on x {
                 NumberAnimation {

@@ -1,4 +1,4 @@
-import QtQuick 2.5
+import QtQuick 2.10
 import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.2
 import QtQuick.Scene3D 2.0

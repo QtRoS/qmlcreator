@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtSensors 5.4
+import QtQml 2.11
+import QtSensors 5.11
 
 QtObject {
-    property string version: "5.4"
+    property string version: "5.11"
 }

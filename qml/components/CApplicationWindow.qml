@@ -17,7 +17,7 @@
 ****************************************************************************/
 
 import QtQuick 2.5
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.4
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.2
 import Qt.labs.settings 1.0
@@ -32,11 +32,12 @@ ApplicationWindow {
     title: "QML Creator"
     visibility: settings.debugMode ? "FullScreen" : "Maximized"
 
-    style: ApplicationWindowStyle {
-        background: Rectangle {
-            color: palette.background
-        }
-    }
+// TODO
+//    style: ApplicationWindowStyle {
+//        background: Rectangle {
+//            color: paletteItem.background
+//        }
+//    }
 
     // Loading
     signal loaded()
@@ -119,13 +120,12 @@ ApplicationWindow {
     property alias settings: settings
 
     // Palettes
-
     PaletteLoader {
         id: paletteLoader
         name: settings.palette
     }
 
-    property alias palette: paletteLoader.palette
+    property alias paletteItem: paletteLoader.palette
 
     // Message Handler
 

@@ -16,9 +16,9 @@
 **
 ****************************************************************************/
 
-import QtQml 2.2
-import QtQuick.Particles 2.0
+import QtQml 2.11
+import QtQuick.Particles 2.11
 
 QtObject {
-    property string version: "2.0"
+    property string version: "2.11"
 }

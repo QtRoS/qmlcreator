@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.10
 
 Item {
     id: cVerticalScrollBar
@@ -36,7 +36,7 @@ Item {
         anchors.left: parent.left
         anchors.right: parent.right
         height: flickableItem.visibleArea.heightRatio * flickableItem.height
-        color: palette.scrollBar
+        color: paletteItem.scrollBar
     }
 
     MouseArea {
