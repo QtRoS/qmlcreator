@@ -1,4 +1,4 @@
-import QtQuick 2.10
+import QtQuick 2.11
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.2
 import QtMultimedia 5.4
@@ -18,12 +18,12 @@ Item {
 
         ComboBox {
             Layout.fillWidth: true
+            textRole: "text"
             model: WebcamsModel {
                 id: comboBoxModel
             }
             onCurrentIndexChanged: video.source = comboBoxModel.get(currentIndex).stream
         }
-
 
         Video {
             id: video

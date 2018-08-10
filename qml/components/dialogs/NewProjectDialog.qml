@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.10
+import QtQuick 2.11
 import QtGraphicalEffects 1.0
 import ProjectManager 1.1
 import ".."

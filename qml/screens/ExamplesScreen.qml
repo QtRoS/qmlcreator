@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.10
+import QtQuick 2.11
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.2
 import ProjectManager 1.1
@@ -25,11 +25,10 @@ import "../components"
 BlankScreen {
     id: examplesScreen
 
-    // TODO
-//    Stack.onStatusChanged: {
-//        if (Stack.status === Stack.Activating)
-//            listView.model = ProjectManager.projects()
-//    }
+    StackView.onStatusChanged: {
+        if (StackView.status === StackView.Activating)
+            listView.model = ProjectManager.projects()
+    }
 
     CToolBar {
         id: toolBar

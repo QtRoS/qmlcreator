@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.10
+import QtQuick 2.11
 import ProjectManager 1.1
 import SyntaxHighlighter 1.1
 
@@ -116,8 +116,8 @@ Item {
             anchors.right: parent.right
 
             color: paletteItem.editorNormal
-            selectioncolor: paletteItem.editorSelection
-            selectedTextcolor: paletteItem.editorSelectedText
+            selectionColor: paletteItem.editorSelection
+            selectedTextColor: paletteItem.editorSelectedText
 
             font.family: settings.font
             font.pixelSize: settings.fontSize
@@ -232,16 +232,16 @@ Item {
             SyntaxHighlighter {
                 id: syntaxHighlighter
 
-                normalcolor: paletteItem.editorNormal
-                commentcolor: paletteItem.editorComment
-                numbercolor: paletteItem.editorNumber
-                stringcolor: paletteItem.editorString
-                operatorcolor: paletteItem.editorOperator
-                keywordcolor: paletteItem.editorKeyword
-                builtIncolor: paletteItem.editorBuiltIn
-                markercolor: paletteItem.editorMarker
-                itemcolor: paletteItem.editorItem
-                propertycolor: paletteItem.editorProperty
+                normalColor: paletteItem.editorNormal
+                commentColor: paletteItem.editorComment
+                numberColor: paletteItem.editorNumber
+                stringColor: paletteItem.editorString
+                operatorColor: paletteItem.editorOperator
+                keywordColor: paletteItem.editorKeyword
+                builtInColor: paletteItem.editorBuiltIn
+                markerColor: paletteItem.editorMarker
+                itemColor: paletteItem.editorItem
+                propertyColor: paletteItem.editorProperty
             }
 
             Component.onCompleted: {

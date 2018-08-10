@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.10
+import QtQuick 2.11
 import "../components"
 
 BlankScreen {
@@ -42,10 +42,12 @@ BlankScreen {
 
         text:  textStyle() +
                Qt.application.name + " " + Qt.application.version + "<br>
-               Based on Qt Quick 2.4 (Qt 5.4.2)<br>
-               Built on Jul 23 2015<br><br>
+               Based on Qt Quick 2.11 (Qt 5.11.1)<br>
+               Built on AUG 30 2018<br><br>
                Copyright (C) 2013-2015 <a href=\"https://linkedin.com/in/olegyadrov/\">Oleg Yadrov</a><br>
                <a class=\"link\" href=\"mailto:wearyinside@gmail.com\">wearyinside@gmail.com</a><br><br>
+               Copyright (C) 2018 <a href=\"https://github.com/QtRoS\">Roman Shchekin</a><br>
+               <a class=\"link\" href=\"mailto:qtros@yandex.ru\">qtros@yandex.ru</a><br><br>
 
                QML Creator application is distributed under
                <a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache Software License, Version 2</a>.<br><br>

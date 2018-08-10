@@ -1,4 +1,4 @@
-import QtQuick 2.10
+import QtQuick 2.11
 import QtQuick.Particles 2.0
 import QtQuick.Window 2.2
 

@@ -16,7 +16,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.5
+import QtQuick 2.11
 import QtQuick.Controls 2.4
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.2
@@ -32,12 +32,9 @@ ApplicationWindow {
     title: "QML Creator"
     visibility: settings.debugMode ? "FullScreen" : "Maximized"
 
-// TODO
-//    style: ApplicationWindowStyle {
-//        background: Rectangle {
-//            color: paletteItem.background
-//        }
-//    }
+    background: Rectangle {
+        color: paletteItem.background
+    }
 
     // Loading
     signal loaded()
@@ -51,7 +48,7 @@ ApplicationWindow {
         settings.pixelDensity = settings.debugMode ? 6.0 : Screen.logicalPixelDensity
 
         var previousVersion = parseInt(settings.previousVersion.split(".").join(""))
-        if (previousVersion === 0)
+        if (previousVersion === 0 || true)  // TODO BUG
         { // first run
             ProjectManager.restoreExamples()
             settings.previousVersion = Qt.application.version
