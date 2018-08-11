@@ -2,8 +2,8 @@ import QtQuick 2.11
 import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.2
 import QtQuick.Scene3D 2.0
-import Qt3D 2.0
-import Qt3D.Renderer 2.0
+import Qt3D.Core 2.0
+import Qt3D.Render 2.0
 
 Rectangle {
     id: rootItem

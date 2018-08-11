@@ -52,7 +52,7 @@ BlankScreen {
 
         ListElement { module: "Qt3D";                    version: ""; status: 0; testComponent: "3D.qml" }
         ListElement { module: "Qt3D.Input";              version: ""; status: 0; testComponent: "3DInput.qml" }
-        ListElement { module: "Qt3D.Renderer";           version: ""; status: 0; testComponent: "3DRenderer.qml" }
+        ListElement { module: "Qt3D.Render";             version: ""; status: 0; testComponent: "3DRenderer.qml" }
         ListElement { module: "QtQuick.Scene3D";         version: ""; status: 0; testComponent: "Scene3D.qml" }
 
         ListElement { module: "QtCanvas3D";              version: ""; status: 0; testComponent: "Canvas3D.qml" }

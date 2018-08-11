@@ -39,13 +39,12 @@ ApplicationWindow {
     // Loading
     signal loaded()
 
-    Component.onCompleted:
-        loaded()
+    Component.onCompleted: loaded()
 
     onLoaded: {
         // http://doc.qt.io/qt-5/qml-qtquick-window-screen.html
         // The Screen attached object is valid inside Item or Item derived types, after component completion
-        settings.pixelDensity = settings.debugMode ? 6.0 : Screen.logicalPixelDensity
+        settings.pixelDensity = settings.debugMode ? 6.0 : Screen.logicalPixelDensity // logicalPixelDensity pixelDensity
 
         var previousVersion = parseInt(settings.previousVersion.split(".").join(""))
         if (previousVersion === 0 || true)  // TODO BUG
@@ -85,7 +84,7 @@ ApplicationWindow {
 
         // configurable
         property string font: "Ubuntu Mono"
-        property int fontSize: 40
+        property int fontSize: 16
         property string palette: "Cute"
         property int indentSize: 4
         property bool debugging: true
